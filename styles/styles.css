@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(150, 206, 230);
+}
+.navbar-nav {
+    display: flex; font-family: Arial, Helvetica, sans-serif;
+    justify-content: center; 
+    width: 100%;
+    top: 0;
+}
+
+.grid-container{
+    display: grid; margin-top: 20px;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.grid-container > div{
+    text-align: center; 
+    background-color: rgba(99, 99, 223, 0.912);
+    padding: 20px; margin: 20px;border-radius: 20px; 
+    height: 250px;color:rgb(56, 56, 67);
+}
+
+.menu a{color:black;
+    font-size:20px;
+    font-weight: bold;
+}
+  #giveonline{background-color: rgb(99, 99, 223); margin-left: 20%;}
+  #giveonline .nav-link{color: azure;}
+  .menu a:hover{background-color: rgb(6, 6, 20); color: white; border-radius: 10px;}
+  .nav-item{border-radius: 10px; text-align: center;}
+  .nav-item a.active {
+    background-color: rgb(9, 9, 24); border-radius: 10px;
+    color: white;
+  }
+  .navbar-toggler-icon{background-color:rgb(56, 56, 67);;}
+  .navbar-toggler{background:rgb(56, 56, 67);}
+  .bg-color{background-color: whitesmoke;}
+  .navbar-brand{margin-left: 20%;}
+ 
+  @media (max-width:850px) {
+    .navbar-brand{margin-left: 10px;}
+    #giveonline{margin-left: 9%;}
+    .grid-container{grid-template-columns:auto;gap: 1px;}
+    .navbar-nav {font-weight: none;}
+  }
+  @media (max-width:575px) {
+    .navbar-brand{margin-left: 0%;}
+    #giveonline{margin-left: 0%;}
+  }
+  .home {
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/bg4.jpg');
+    background-size: cover; 
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 85vh;
+    width: 100%; 
+}
+
+.home h1 {
+    font-size: 100px; 
+    font-weight: bolder;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        height: 65vh; /* Adjust the height as needed */
+        font-size: 16px; /* Adjust the font size as needed */
+    }
+
+    .home h1 {
+        font-size: 40px; /* This size is for mobile devices */
+    }
+}
